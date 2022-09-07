@@ -1,0 +1,107 @@
+.Calc {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    height: 700px;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 4px 8px 8px 5px  rgba(0, 0, 0, 0.2), 0 10px 25px 5px rgba(0, 0, 0, 0.19);
+}
+.screen {
+    display: flex;
+    flex-direction: column;
+    background-color: #345B63;
+    height: 40%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    color: aliceblue;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid yellow;
+}
+.exp, .res {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+.exp {
+    height: 70%;
+    border-bottom: 1px solid yellow;
+    font-size: 1rem;
+}
+.res {
+    height: 30%;
+    position: relative;
+}
+.exp p{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    width:90%;
+    margin: auto;
+    text-align: center;
+}
+.res p{
+    width: 70px;
+    display: inline;
+    position:absolute;
+    left: 10px;
+    border-right: 1px solid yellow;
+    height: 100%;
+    color: yellow;
+}
+.res div {
+    text-align: center;
+    position: absolute;
+    right:0;
+    width: calc(100% - 80px);
+}
+.buttons-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 10px 0px;
+    height: 60%;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    background-color: #152D35;
+    border-radius: 0 0 20px 20px;
+}
+.num-button, .func-button {
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: rgb(52, 91, 99, .5);
+    background-color: rgb(3, 87, 3);
+    border: none;
+    font-size: 1.25rem;
+    color: aliceblue;
+    transition: .4s;
+}
+.func-button {
+    color: yellow;
+    background-color: red;
+}
+.num-button:hover{
+    background-color: green;
+    width: 65px;
+}
+.func-button:hover{
+    background-color: rgba(175, 0, 0, 0.863);
+    width: 65px;
+}
+.func-button:active {
+        box-shadow: inset 2px 2px 5px red;
+}
+.num-button:active {
+    box-shadow: inset 2px 2px 5px rgb(1, 65, 1);
+}
