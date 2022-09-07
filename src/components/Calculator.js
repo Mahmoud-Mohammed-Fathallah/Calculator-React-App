@@ -10,6 +10,9 @@ export default function Calculator() {
         try {
             value=eval(shown).toString();
             setRes(value);
+            if(temp === "="){
+                setShow(value);
+            }  
         }catch(e){
             if(temp === "="){
                 window.alert("Invalid expression!");
