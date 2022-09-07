@@ -1,4 +1,4 @@
-#You can view the calculator online via: https://mahmoud-mohammed-fathallah.github.io/Calculator-React-App/
+# You can view the calculator online via: https://mahmoud-mohammed-fathallah.github.io/Calculator-React-App/
 
 # Getting Started with Create React App
 
